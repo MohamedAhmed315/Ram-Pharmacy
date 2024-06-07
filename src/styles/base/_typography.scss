@@ -1,0 +1,21 @@
+.fas,
+.fa-classic,
+.fa-solid,
+.far,
+.fa-regular {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+.fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+
+html[dir="ltr"] * {
+    font-family: "Sora", sans-serif;
+}
+
+
+html[dir="rtl"] * {
+    font-family: "Changa", sans-serif;
+}

@@ -1,0 +1,122 @@
+@use '../../../node_modules/bootstrap/scss/bootstrap-grid' as breakpoint;
+@import '../../styles/abstracts/';
+@import '../../styles/layout/';
+
+footer {
+    .top-footer {
+        .newsletter-container {
+            background-color: $grey-bg;
+            border-radius: $border-radius-20;
+            min-height: 200px;
+            max-height: 200px;
+
+            .newsletter {
+                #newsletter-title {
+                    @include header-footer-title($blue-color);
+                }
+            }
+
+            .newsletter-form {
+                form {
+                    input[type="email"] {
+                        @include header-btn(#fff, #000);
+                    }
+
+                    button[type="submit"] {
+                        @include header-btn($gold-color, #000);
+                    }
+                }
+            }
+        }
+
+        .stay-connected-container {
+            background: $header-bg;
+            border-radius: $border-radius-20;
+            min-height: 200px;
+            max-height: 200px;
+
+            #stay-connected-title {
+                @include header-footer-title(#fff);
+            }
+
+            .social-icons {
+                .fa-brands {
+                    font-size: 32px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .mid-footer {
+        h6 {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+
+        .footer-slogan {
+            @include breakpoint.media-breakpoint-down(xl) {
+                flex-direction: column;
+            }
+
+            @include breakpoint.media-breakpoint-down(lg) {
+                flex-direction: row;
+            }
+
+            @include breakpoint.media-breakpoint-down(md) {
+                flex-direction: column;
+            }
+        }
+
+        #footer-offer {
+            width: 250px;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .bottom-footer {
+        .registry-number {
+            display: flex;
+            justify-content: space-between;
+            background-color: $blue-color;
+            border-radius: $border-radius-40;
+            padding: 10px 40px;
+
+            @include breakpoint.media-breakpoint-down(xl) {
+                padding: 10px 24px;
+            }
+
+            p {
+                color: #fff;
+                margin-bottom: 0;
+                font-size: 0.8rem;
+
+                &.payment-methods {
+                    @include breakpoint.media-breakpoint-down(lg) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+
+            p,
+            a {
+                margin-bottom: 0;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

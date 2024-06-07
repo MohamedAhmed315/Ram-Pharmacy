@@ -1,0 +1,111 @@
+@use '../../../node_modules/bootstrap/scss/bootstrap-grid' as breakpoint;
+@import '../../styles/abstracts/';
+@import '../../styles/layout/';
+
+
+#top-header {
+    background: $header-bg;
+    border-radius: $border-radius-20;
+
+    .navbar-toggler {
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .navbar-collapse {
+        transition: 0.5s;
+    }
+
+    #search-form {
+        width: 100%;
+
+        @include breakpoint.media-breakpoint-down(xl) {
+            width: auto;
+        }
+
+        input {
+            border-start-start-radius: $border-radius-20;
+            border-end-start-radius: $border-radius-20;
+            border-start-end-radius: 0;
+            border-end-end-radius: 0;
+            border: none;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        #search-btn {
+            background: #fff;
+            color: #000;
+            border: none;
+            border-start-end-radius: $border-radius-20;
+            border-end-end-radius: $border-radius-20;
+            border-start-start-radius: 0;
+            border-end-start-radius: 0;
+        }
+    }
+
+    #sign-in {
+        @include header-btn(#fff, #000);
+    }
+
+    #lang-btn {
+        @include header-btn($gold-color, #000);
+        font-family: "Changa", sans-serif;
+    }
+
+    #slogan {
+        @include header-footer-title(#fff);
+    }
+
+    #bottom-header {
+        background-color: $blue-color;
+        border-bottom-right-radius: $border-radius-20;
+        border-bottom-left-radius: $border-radius-20;
+
+        .navbar-toggler {
+            color: #fff;
+        }
+
+        .navbar-nav {
+            flex-wrap: wrap;
+
+            .dropdown {
+                .dropdown-toggle {
+                    background-color: transparent;
+                    border: 0;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .categories {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 0;
+            display: none;
+
+            @include breakpoint.media-breakpoint-down(lg) {
+                display: block;
+            }
+        }
+    }
+
+    #header-offer {
+        position: absolute;
+        top: 80px;
+        z-index: 1;
+        width: 250px;
+
+        @include breakpoint.media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+}

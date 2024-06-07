@@ -1,0 +1,155 @@
+<nav id="top-header"
+    class="navbar navbar-expand-lg navbar-dark bg-dark pb-0 pt-3 flex-column align-items-start">
+    <div class="container-fluid px-md-5 px-3">
+        <a class="navbar-brand mx-3" href='#'>
+            <img src="../../assets/images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav1">
+            <form id="search-form" class="d-flex my-3 my-lg-0 me-0 me-lg-3">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for something">
+                    <button id="search-btn" class="btn btn-primary" type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+
+            <ul class="navbar-nav align-items-center justify-content-between w-100 flex-column flex-md-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Stores
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">
+                        <i class="fa-regular fa-heart"></i>
+                        Favorites
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="sign-in" class="nav-link" href="javascript:void(0)">
+                        Sign in
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        Cart
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="lang-btn" class="nav-link" href="javascript:void(0)">
+                        <!-- <i class="fa-regular fa-heart"></i> -->
+                        عربي
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h2 id="slogan" class="px-md-5 px-3"> All your <span>pharmacy</span> <br>
+        supplies in one place </h2>
+        <app-sticker-offer id="header-offer"></app-sticker-offer>
+    <!-- bottom nav -->
+    <nav id="bottom-header" class="navbar navbar-expand-lg navbar-dark w-100 px-md-4 px-3 py-3">
+        <div class="container-fluid justify-content-between align-items-center">
+            <p class="categories">Categories</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav2"
+                aria-controls="nav2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav2">
+                <ul class="navbar-nav p-0">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mum & Baby
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Beauty Care
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Personal Care
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Health & Wellness
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Medicine & Treatment
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Vitamins & Healthy Nutrition
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</nav>
+

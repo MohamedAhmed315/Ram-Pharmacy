@@ -1,0 +1,36 @@
+@use '../../../node_modules/bootstrap/scss/bootstrap-grid' as breakpoint;
+@import '../../styles/abstracts/';
+
+.offer-card {
+    border-radius: $border-radius-20;
+    background-color: $gold-color;
+
+    .card-body {
+        padding: 15px;
+
+        .card-title {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        .card-text {
+            margin-bottom: 0;
+            font-size: 0.8rem;
+        }
+
+
+
+        .btn-container {
+            position: relative;
+            width: fit-content;
+
+            .view-offers-button {
+                @include offers-btn(#fff, $blue-color);
+
+                .arrow {
+                    @include offers-btn-arrow($blue-color, #fff);
+                }
+            }
+        }
+    }
+}

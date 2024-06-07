@@ -1,0 +1,10 @@
+@import '../abstracts/variables';
+
+::placeholder {
+    color: $placeholder-color;
+    font-size: 0.8rem;
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12-18 */
+    color: $placeholder-color;
+  }

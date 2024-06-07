@@ -1,0 +1,27 @@
+// @use '../abstracts/variables';
+
+html[dir="ltr"] {
+    #header-offer {
+        right: 20px;
+    }
+
+    .view-offers-button {
+        .arrow {
+            right: -33px;
+            left: auto;
+        }
+    }
+}
+
+html[dir="rtl"] {
+    #header-offer {
+        left: 20px;
+    }
+
+    .view-offers-button {
+        .arrow {
+            left: -33px;
+            right: auto;
+        }
+    }
+}
