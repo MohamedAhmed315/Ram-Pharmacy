@@ -1,0 +1,43 @@
+@use '../../../../node_modules/bootstrap/scss/bootstrap-grid' as breakpoint;
+@import '../../../styles/abstracts/';
+
+.top-section {
+    .rect-1 {
+        @include top-rect('../../../assets/images/home/Rectangle-1.png');
+    }
+
+    .rect-2 {
+        @include top-rect('../../../assets/images/home/Rectangle-2.png');
+    }
+
+    .rect-3 {
+        @include top-rect('../../../assets/images/home/Rectangle-3.png');
+        align-items: flex-start;
+    }
+
+    .btn-container {
+        position: relative;
+        width: fit-content;
+
+        .view-offers-button {
+            @include offers-btn($blue-color, #fff);
+
+            .arrow {
+                @include offers-btn-arrow($gold-color, #000);
+            }
+        }
+    }
+
+    .disount {
+        color: $gold-color;
+        font-size: 20px;
+        text-align: end;
+    }
+
+    .offer-name {
+        color: $blue-color;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: end;
+    }
+}
