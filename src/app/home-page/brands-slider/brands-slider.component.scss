@@ -1,0 +1,9 @@
+@use '../../../../node_modules/bootstrap/scss/bootstrap-grid' as breakpoint;
+@import '../../../styles/abstracts/';
+
+.brands-slider {
+    img {
+        margin: auto;
+        display: flex;
+    }
+}
