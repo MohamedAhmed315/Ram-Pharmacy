@@ -82,6 +82,10 @@ footer {
             width: 250px;
             display: block;
             margin-inline-start: auto;
+
+            @include breakpoint.media-breakpoint-down(lg) {
+                margin: auto;
+            }
         }
     }
 
