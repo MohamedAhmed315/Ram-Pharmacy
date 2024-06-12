@@ -34,6 +34,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "node_modules/@splidejs/splide/dist/css/splide.min.css",
               "node_modules/@splidejs/splide/dist/css/themes/splide-default.min.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles/main.scss"
             ],
             "scripts": [

@@ -1,0 +1,97 @@
+@use '../../../node_modules/bootstrap/scss/bootstrap-grid' as breakpoint;
+@import '../../styles/abstracts/';
+
+.card {
+    width: 252px;
+    height: 450px;
+    background: white;
+    border-radius: $border-radius-20;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    transition: 0.2s ease-in-out;
+    justify-content: space-around;
+}
+
+.img {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: top;
+    justify-content: right;
+    padding: 1rem 0;
+    justify-content: center;
+}
+
+.save {
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .svg {
+        transition: 0.2s ease-in-out;
+        width: 15px;
+        height: 15px;
+    }
+
+    &:hover {
+        transform: scale(1.1) rotate(10deg);
+
+        .svg {
+            fill: #ced8de;
+        }
+    }
+}
+
+.text {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+
+    .h3 {
+        font-family: 'Lucida Sans' sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+    }
+
+    .p {
+        font-family: 'Lucida Sans' sans-serif;
+        color: #999999;
+        font-size: 13px;
+    }
+}
+
+.price-after {
+    color: $blue-color;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.price-before {
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.btn-container {
+    position: relative;
+    width: 85%;
+
+    .view-offers-button {
+        @include offers-btn($blue-color, #fff);
+        width: 100%;
+
+        .cart {
+            @include offers-btn-arrow($gold-color, $blue-color);
+        }
+    }
+}

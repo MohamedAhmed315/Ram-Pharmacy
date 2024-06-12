@@ -15,26 +15,14 @@
     background-color: $bg-color;
     color: $font-color;
     border-radius: 20px;
-    padding: 8px 16px;
-    ;
+    padding: 4px 16px;
     font-size: 1rem;
-
     border: none;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
-
-    // &:hover {
-    //     background-color: $button-color;
-    //     color: $button-background;
-
-    //     .arrow {
-    //         background-color: $button-background;
-    //         color: $button-color;
-    //     }
-    // }
 }
 
 // Offers sticker button arrow

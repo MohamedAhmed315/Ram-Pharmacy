@@ -5,11 +5,12 @@ import { FooterComponent } from '../footer/footer.component';
 import { TopSectionComponent } from './top-section/top-section.component';
 import { BrandsSliderComponent } from './brands-slider/brands-slider.component';
 import { UploadSectionComponent } from './upload-section/upload-section.component';
+import { TopOffersComponent } from './top-offers/top-offers.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [HeaderComponent, StickerOfferComponent, FooterComponent, TopSectionComponent, BrandsSliderComponent, UploadSectionComponent],
+  imports: [HeaderComponent, StickerOfferComponent, FooterComponent, TopSectionComponent, BrandsSliderComponent, UploadSectionComponent, TopOffersComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })

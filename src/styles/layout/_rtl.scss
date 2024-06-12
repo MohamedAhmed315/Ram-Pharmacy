@@ -6,7 +6,9 @@ html[dir="ltr"] {
     }
 
     .view-offers-button {
-        .arrow {
+
+        .arrow,
+        .cart {
             right: -33px;
             left: auto;
         }
@@ -19,7 +21,9 @@ html[dir="rtl"] {
     }
 
     .view-offers-button {
-        .arrow {
+
+        .arrow,
+        .cart {
             left: -33px;
             right: auto;
         }
