@@ -1,50 +1,6 @@
+<h2>Shop by <span>brands</span></h2>
 <splide [options]="options" id="brands-slider">
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 1.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 2.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 3.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 4.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 5.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 6.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 7.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 8.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 9.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 10.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 11.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 12.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 13.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 14.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 15.png" alt="" />
-    </splide-slide>
-    <splide-slide class="slide-item">
-        <img src="../../../assets/images/brands/PriorinBrand 16.png" alt="" />
+    <splide-slide class="slide-item" *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]">
+        <img src="../../../assets/images/brands/PriorinBrand {{i}}.png" alt="Brand {{i}}" />
     </splide-slide>
 </splide>

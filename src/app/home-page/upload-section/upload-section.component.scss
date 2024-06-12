@@ -1,0 +1,48 @@
+@use '../../../../node_modules/bootstrap/scss/bootstrap-grid' as breakpoint;
+@import '../../../styles/abstracts/';
+
+.upload {
+    background: $header-bg, url('../../../assets/images/home/upload-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: $border-radius-20;
+    margin-top: 3rem;
+
+    img {
+        @include breakpoint.media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+
+    h2 {
+        @include header-footer-title(#fff);
+        font-size: 3rem;
+
+        @include breakpoint.media-breakpoint-down(xl) {
+            font-size: 2rem;
+        }
+
+        @include breakpoint.media-breakpoint-down(md) {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .btn-container {
+        position: relative;
+        width: fit-content;
+
+        .view-offers-button {
+            @include offers-btn(#fff, $blue-color);
+
+            .arrow {
+                @include offers-btn-arrow($gold-color, $blue-color);
+            }
+        }
+    }
+}
