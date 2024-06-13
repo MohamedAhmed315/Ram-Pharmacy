@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-between mt-5 mb-3">
+    <h2>Top skin & care <span>purchased</span></h2>
+    <div class="btn-container">
+        <button class="view-offers-button">
+            View all offers
+            <span class="arrow"></span>
+        </button>
+    </div>
+</div>
+
+
+<splide [options]="options" id="top-purchased-slider">
+    @for (item of products; track $index) {
+    <splide-slide>
+        <app-product-card [name]="item.name" [price_before]="item.price_before" [price_after]="item.price_after"
+            [rating]="item.rating" [image]="item.image" [require_prescription]="item.require_prescription"></app-product-card>
+    </splide-slide>
+    }
+</splide>

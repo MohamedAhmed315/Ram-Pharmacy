@@ -1,18 +1,13 @@
 @use '../../../../node_modules/bootstrap/scss/bootstrap-grid' as breakpoint;
 @import '../../../styles/abstracts/';
 
-.top-section {
-    .rect-1 {
-        @include top-rect('../../../assets/images/home/Rectangle-1.png');
-    }
+.mid-section {
+    margin-top: 3rem;
+    position: relative;
 
-    .rect-2 {
-        @include top-rect('../../../assets/images/home/Rectangle-2.png');
-    }
-
-    .rect-3 {
-        @include top-rect('../../../assets/images/home/Rectangle-3.png');
-        align-items: flex-start;
+    .rect-mid {
+        @include top-rect('../../../assets/images/home/mid-bg.png');
+        align-items: flex-start;      
     }
 
     .btn-container {
@@ -38,6 +33,6 @@
         color: $blue-color;
         font-size: 24px;
         text-transform: uppercase;
-        text-align: start;
+        text-align: end;
     }
 }
