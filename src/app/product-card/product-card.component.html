@@ -1,6 +1,6 @@
 <div class="card product-card">
     <div class="img">
-        <img src="../../assets/images/products/p1.png" alt="">
+        <img [src]="image" alt="">
     </div>
 
     <div class="save">
@@ -8,10 +8,10 @@
     </div>
 
     <div class="text">
-        <p class="h3"> Garnier Skin Active Micellar Cleansing Water 400 ml </p>
-        <p class="price-after mb-0"> 25.94 SAR</p>
-        <p class="price-before"> 30.94 SAR</p>
-        <p-rating [(ngModel)]="value" />
+        <p class="h3"> {{ name }} </p>
+        <p class="price-after mb-0"> {{ price_after }}</p>
+        <p class="price-before"> {{ price_before }}</p>
+        <p-rating [(ngModel)]="rating" [readonly]="true" [cancel]="false" />
         <div class="btn-container">
             <button class="view-offers-button">
                 Add to Cart

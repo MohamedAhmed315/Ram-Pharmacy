@@ -1,0 +1,32 @@
+@use '../../../../node_modules/bootstrap/scss/bootstrap-grid' as breakpoint;
+@import '../../../styles/abstracts/';
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+app-product-card {
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+
+.btn-container {
+    position: relative;
+    margin-inline-end: 2rem;
+
+    .view-offers-button {
+        @include offers-btn($blue-color, #fff);
+
+        .arrow {
+            @include offers-btn-arrow($gold-color, $blue-color);
+        }
+    }
+}
