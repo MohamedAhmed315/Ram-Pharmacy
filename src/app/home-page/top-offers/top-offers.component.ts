@@ -21,7 +21,7 @@ export class TopOffersComponent {
   }, {
     name: "Garnier Skin Active Micellar Cleansing Water 200 ml",
     image: "../../assets/images/products/p2.png",
-    price_before: "20.94 SAR",
+    price_before: "",
     price_after: "15.94 SAR",
     rating: 4,
     require_prescription: false,
@@ -42,7 +42,7 @@ export class TopOffersComponent {
   }, {
     name: "Garnier Skin Active Micellar Cleansing Water 500 ml",
     image: "../../assets/images/products/p5.png",
-    price_before: "80.94 SAR",
+    price_before: "",
     price_after: "70.94 SAR",
     rating: 2,
     require_prescription: false,

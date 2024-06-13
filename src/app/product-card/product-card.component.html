@@ -10,7 +10,10 @@
     <div class="text">
         <p class="h3"> {{ name }} </p>
         <p class="price-after mb-0"> {{ price_after }}</p>
-        <p class="price-before"> {{ price_before }}</p>
+        @if (price_before != '') {
+          <p class="price-before"> {{ price_before }}</p>  
+        }
+        
         <p-rating [(ngModel)]="rating" [readonly]="true" [cancel]="false">
             <ng-template pTemplate="onicon">
                 <img src="../../assets/images/icons/star-on.svg" width="25px" height="25px" />
