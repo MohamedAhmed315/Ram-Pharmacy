@@ -19,11 +19,20 @@
                 <img src="../../assets/images/icons/star-off.svg" width="25px" height="25px" />
             </ng-template>
         </p-rating>
+
+        @if(require_prescription) {
+        <div class="prescription-btn-container">
+            <button class="prescription-btn">Prescription Required</button>
+        </div>
+        }
+        @else {
         <div class="btn-container">
             <button class="view-offers-button">
                 Add to Cart
                 <i class="fa-solid fa-basket-shopping cart"></i>
             </button>
         </div>
+        }
+
     </div>
 </div>

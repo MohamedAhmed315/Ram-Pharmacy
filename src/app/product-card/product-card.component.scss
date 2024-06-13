@@ -26,6 +26,7 @@
     margin: 20px;
     width: 30px;
     height: 30px;
+    font-size: 25px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -34,18 +35,16 @@
     top: 0;
     right: 0;
 
-    .svg {
-        transition: 0.2s ease-in-out;
-        width: 15px;
-        height: 15px;
+    .fa-heart {
+        border: solid 1px #ededed;
+        margin: auto;
+        padding: 5px;
+        background-color: #ededed;
+        border-radius: 10px;
     }
 
     &:hover {
         transform: scale(1.1) rotate(10deg);
-
-        .svg {
-            fill: #ced8de;
-        }
     }
 }
 
@@ -91,6 +90,15 @@
         .cart {
             @include offers-btn-arrow($gold-color, $blue-color);
         }
+    }
+}
+
+.prescription-btn-container {
+    width: 100%;
+
+    .prescription-btn {
+        @include offers-btn($blue-color, $gold-color);
+        width: 100%;
     }
 }
 

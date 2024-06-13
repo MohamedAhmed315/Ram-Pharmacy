@@ -13,7 +13,7 @@
     @for (item of products; track $index) {
     <splide-slide>
         <app-product-card [name]="item.name" [price_before]="item.price_before" [price_after]="item.price_after"
-            [rating]="item.rating" [image]="item.image"></app-product-card>
+            [rating]="item.rating" [image]="item.image" [require_prescription]="item.require_prescription"></app-product-card>
     </splide-slide>
     }
 </splide>

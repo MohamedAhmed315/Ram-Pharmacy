@@ -16,4 +16,5 @@ export class ProductCardComponent {
   @Input() price_after = '';
   @Input() rating = 0;
   @Input() image = '';
+  @Input() require_prescription = true;
 }
